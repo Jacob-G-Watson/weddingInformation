@@ -45,9 +45,14 @@
 }
 
 /* General formatting */
+
 body {
 	background-color: gray;
 	margin: 0;
+
+	background-image: url("website\ background.png");
+	background-attachment: fixed;
+	background-size: 100%;
 }
 h1,
 h2,
@@ -56,17 +61,36 @@ p {
 	text-align: center;
 }
 
+h3 {
+	font-size: x-large;
+}
+
 /* Jacob and Ashleigh */
 
 #title h1 {
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	margin: 0;
+	font-family: "Great Vibes";
+	font-size: 4rem;
+}
+
+#title {
+	background: #5a86ad;
+	z-index: 1001;
+}
+header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
 }
 
 /* Time and Location 3 areas of information */
 #timeAndLocation {
 	justify-content: space-evenly;
 	padding-top: 1rem;
+	padding-top: 350px;
 }
 
 #timeAndLocation div {
@@ -78,6 +102,7 @@ p {
 	flex-wrap: nowrap;
 	align-items: center;
 	margin: 1rem;
+	opacity: 90%;
 }
 
 #top2timeLocation div {
@@ -87,6 +112,11 @@ p {
 	align-items: center;
 	justify-content: center;
 	display: flex;
+	flex-direction: column;
+}
+
+#top2timeLocation h1 {
+	margin: 0;
 }
 
 .timeAndLocationElement {
@@ -95,28 +125,32 @@ p {
 	border-radius: 2rem;
 	padding: 1rem;
 }
+/* When and where */
+.boxTitle {
+	font-family: "Great Vibes";
+}
 
 /* CountDown */
 #countDown {
 	flex-grow: 2;
-	background: lightblue;
+	flex-direction: column;
+	background: #5a86ad;
 	align-items: center;
 	justify-content: center;
 	display: flex;
 	border-radius: 0;
-	margin-top: 5rem;
-	margin-bottom: 5rem;
-	height: 10rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	opacity: 92%;
 }
+
 #countDown h2 {
-	font-size: 5rem;
+	font-size: 3rem;
+	margin: 0;
 }
 
 /* Additional Information */
-body {
-	background-image: url("Floraldesign.png");
-	background-size: 100%;
-}
+
 #additionalInformation div {
 	margin: 1rem;
 }

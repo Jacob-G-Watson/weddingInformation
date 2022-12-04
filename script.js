@@ -4,6 +4,8 @@ window.onload = function () {
 	setTimeout(function () {
 		document.getElementById("fadein").remove();
 	}, 1000);
+
+	window.addEventListener("scroll", scrollFunction, false);
 };
 
 function countDown() {
@@ -34,4 +36,12 @@ function countDown() {
 			document.getElementById("countDownTime").innerHTML = "";
 		}
 	}, 0);
+}
+
+function scrollFunction() {
+	if (this.scrollY < 50) {
+		document.getElementById("title").innerHTML = "<h1>Jacob & Ashleigh's Wedding<h1>";
+	} else {
+		document.getElementById("title").innerHTML = "<h2>J & A </h2>";
+	}
 }
