@@ -67,30 +67,51 @@ h3 {
 
 /* Jacob and Ashleigh */
 
-#title h1 {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	margin: 0;
-	font-family: "Great Vibes";
-	font-size: 4rem;
-}
-
 #title {
 	background: #5a86ad;
-	z-index: 1001;
+	z-index: 998;
 }
+
 header {
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	z-index: 1000;
+	z-index: 997;
+	width: 100%;
+}
+
+#title .bigText {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin: 0;
+	font-family: "Great Vibes";
+	font-size: 4rem;
+	transition: 0.5s ease;
+}
+
+#title .smallText {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin: 0;
+	font-family: "Great Vibes";
+	font-size: 1rem;
+
+	position: relative;
+
+	transition: 0.5s ease;
 }
 
 /* Time and Location 3 areas of information */
-#timeAndLocation {
+#timeAndLocation.bigText {
 	justify-content: space-evenly;
-	padding-top: 1rem;
 	padding-top: 350px;
+	transition: 0.5s ease;
+}
+
+#timeAndLocation.smallText {
+	justify-content: space-evenly;
+	padding-top: 200px;
+	transition: 0.5s ease;
 }
 
 #timeAndLocation div {

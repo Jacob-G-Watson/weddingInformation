@@ -39,9 +39,11 @@ function countDown() {
 }
 
 function scrollFunction() {
-	if (this.scrollY < 50) {
-		document.getElementById("title").innerHTML = "<h1>Jacob & Ashleigh's Wedding<h1>";
+	if (this.scrollY < 100) {
+		document.getElementById("titleH1").className = "bigText";
+		document.getElementById("timeAndLocation").className = "bigText";
 	} else {
-		document.getElementById("title").innerHTML = "<h2>J & A </h2>";
+		document.getElementById("titleH1").className = "smallText";
+		document.getElementById("timeAndLocation").className = "smallText";
 	}
 }
