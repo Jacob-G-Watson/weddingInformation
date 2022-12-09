@@ -131,7 +131,6 @@ header {
 
 #top2timeLocation div {
 	margin: 0.5rem;
-	width: 50%;
 	height: 90%;
 	align-items: center;
 	justify-content: center;
@@ -183,4 +182,11 @@ header {
 	opacity: 90%;
 	border-radius: 25rem;
 	padding: 1rem;
+}
+
+/* Web View */
+@media only screen and (min-width: 1000px) {
+	#additionalInformation {
+		width: 50%;
+	}
 }
