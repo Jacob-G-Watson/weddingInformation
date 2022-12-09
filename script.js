@@ -39,11 +39,13 @@ function countDown() {
 }
 
 function scrollFunction() {
-	if (this.scrollY < 100) {
-		document.getElementById("titleH1").className = "bigText";
-		document.getElementById("timeAndLocation").className = "bigText";
-	} else {
-		document.getElementById("titleH1").className = "smallText";
-		document.getElementById("timeAndLocation").className = "smallText";
+	if (document.documentElement.clientWidth < 600) {
+		if (this.scrollY < 100) {
+			document.getElementById("titleH1").className = "bigText text";
+			document.getElementById("timeAndLocation").className = "bigText text";
+		} else {
+			document.getElementById("titleH1").className = "smallText text";
+			document.getElementById("timeAndLocation").className = "smallText text";
+		}
 	}
 }

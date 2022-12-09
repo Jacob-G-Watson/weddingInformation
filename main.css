@@ -53,6 +53,9 @@ body {
 	background-image: url("website\ background.png");
 	background-attachment: fixed;
 	background-size: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 h1,
 h2,
@@ -103,32 +106,30 @@ header {
 
 /* Time and Location 3 areas of information */
 #timeAndLocation.bigText {
-	justify-content: space-evenly;
 	padding-top: 350px;
-	transition: 0.5s ease;
 }
 
 #timeAndLocation.smallText {
-	justify-content: space-evenly;
 	padding-top: 200px;
-	transition: 0.5s ease;
 }
 
-#timeAndLocation div {
-	padding: 0.5rem;
+#timeAndLocation.text {
+	justify-content: space-evenly;
+	transition: 0.5s ease;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #top2timeLocation {
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
-	margin: 1rem;
 	opacity: 90%;
 }
 
 #top2timeLocation div {
 	margin: 0.5rem;
-	width: 50%;
 	height: 90%;
 	align-items: center;
 	justify-content: center;
@@ -153,12 +154,12 @@ header {
 
 /* CountDown */
 #countDown {
-	flex-grow: 2;
+	width: 100vw;
+	display: flex;
 	flex-direction: column;
 	background: #5a86ad;
 	align-items: center;
 	justify-content: center;
-	display: flex;
 	border-radius: 0;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
@@ -181,4 +182,15 @@ header {
 	opacity: 90%;
 	border-radius: 25rem;
 	padding: 1rem;
+}
+
+/* Web View */
+@media only screen and (min-width: 1000px) {
+	#top2timeLocation {
+		width: 50%;
+	}
+
+	#additionalInformation {
+		width: 50%;
+	}
 }
